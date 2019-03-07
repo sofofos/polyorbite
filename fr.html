@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>PolyOrbite</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+h1,h2,h3{color:white; font-size: 50px;}
+
+body, html {
+    height: 100%;
+    line-height: 1.5;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+
+.w3-bar .w3-button {
+    padding: 16px;
+    background-color: black;
+    color: white;
+
+}
+
+.banner {
+
+    color: #f2a3a5;
+    padding: 13em 0 13em 0;
+    background-image: url("images/Cover4.png");
+    background-size: 100% ;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2.5s;
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/group.jpg");
+    min-height: 75%;
+    margin: auto
+}
+.bgimg-2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/Cover4.png");
+    min-height: 100%;
+}
+.bgimg-3 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/starry-night-background.png");
+    background-attachment: scroll;
+    width: 100%;
+    height: auto;
+    ;
+}
+.bgimg-4 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/XavSimonIAC.jpg");
+    min-height: 75%;
+    margin: auto
+}
+.semiopaque-bg{
+    background: rgb(0,0,0,0.5);
+    padding: 20px;
+    display: inline;
+
+}
+.bgcolor-dark{
+    background-color: #1D252C;
+}
+.bgcolor-darker{
+    background-color: #171D23;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="col-md-4 col-sm-8 col-xs-8 w3-black" id="myNavbar">
+            <a href="#home"><i class="fa fa-rocket w3-xxlarge" style="padding:10px"></i></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">À PROPOS</a>
+                <a href="#whatCubesat" class="w3-bar-item w3-button"><i class="fa fa-leaf"></i> MISSIONS</a>
+                <a href="#Outreach" class="w3-bar-item w3-button"><i class="fas fa-atom"></i> IMPLICATION</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fas fa-heartbeat"></i> COMMANDITAIRES</a>
+                <a href="index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> EN</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fermer ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">À PROPOS</a>
+        <a href="#mission" onclick="w3_close()" class="w3-bar-item w3-button">MISSIONS</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">IMPLICATION</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">COMMANDITAIRES</a>
+    </nav>
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h1>
+
+                <span>                                       </span></h1>
+                <ul class="actions">
+                    <li>
+
+
+                    </li>
+                </ul>
+        </div>
+    </section>
+
+
+    <!-- Header with full-height image -->
+
+    <header class="banner w3-display-container  w3-animate-opacity" id="home">
+        <div class="w3-display-left w3-text-white" style="padding: 50px">
+                <div class="w3-half w3-center w3-middle">
+                    <img src="images/logo2.png" style="width:100%;">
+                </div>
+        </div>
+    </header>
+
+    <!--A propos Section -->
+    <div class="w3-container" id="about">
+        <div class="w3-twothird w3-left" style="padding:5%">
+        <h3 lang="en">A propos</h3>
+
+        <div class="w3-row-padding">
+            <p lang="en" class="w3-left" style="font-weight: normal; line-height: 1.5;">
+                PolyOrbite est une société technique au sein de Polytechnique Montréal, dans laquelle 40 étudiants passionnés en premier et deuxième cycle visent un objectif commun : construire et lancer le premier CubeSat étudiant au Québec. PolyOrbite est aussi une organisation qui a développé beaucoup d’expertise en conception dans le domaine spatial, par sa participation dans plusieurs grands projets. Effectivement, PolyOrbite est déjà montée deux fois au podium du Canadian Satellite Design Challenge, CSDC.
+
+</p>
+
+            <p lang="en" class="w3-left" style="font-weight: normal;">Polyorbite a été officiellement reconnu par Polytechnique Montréal en 2013, et demeure la seule société technique spécialisé dans le domaine des technologies spatiale dans l’université. </p>
+        </div>
+        </div>
+        <div class="w3-third w3-right" style="padding:5% 2%">
+            <img src="images/LogoRound.png" style="width:100%; height:auto;">
+        </div>
+    </div>
+
+    <!-- Group photo" -->
+    <div class="bgimg-1 w3-container w3-light-grey"></div>
+
+
+    <!--A propos cont'd -->
+    <div class="w3-container bgcolor-dark" id="whatCubesat">
+        <div class="w3-twothird w3-left" style="padding:5%">
+            <h3 lang="en" class="w3-left ">Qu'est-ce qu'un CubeSat?</h3>
+            <div class="w3-row-padding">
+            <p lang="en" class="w3-left">
+                CubeSats are the result of the current technology miniaturization; they are made up of Units, which are cubes of 10 × 10 × 10 cm. Launching multiple CubeSats can achieve missions at a lower cost than a traditional satellite. These small satellites provide an opportunity for the scientific community. Indeed, a CubeSat can be used for a wide range of tasks: from terrestrial and meteorological imaging to testing materials’ properties in a microgravity environment. The possibilities are numerous as are the potential economic benefits.
+            </p>
+        </div>
+    </div>
+        <div class="w3-third" style="padding:5% ;">
+            <img src="images/SateliteExploseTransparent.png" style="width: 100%; height:auto;">
+        </div>
+    </div>
+
+<!--A propos cont'd -->
+<div class="w3-container w3-black" id="about2">
+    <div class="w3-twothird w3-left" style="padding:5% ;">
+        <h3 lang="en" class="w3-left ">Charge Utile: Spacebean</h3>
+        <div class="w3-row-padding">
+        <p lang="en" class="w3-left" style="position:relative">
+            SpaceBean est un incubateur dont le but principal est d’étudier la viabilité de la croissance d’une plante dans un environnement en microgravité. Ce projet permettra d’étudier des nouvelles conditions de terre et fournir des données pour un modèle de légumineuse en microgravité. C’est un système autonome qui pourra déterminer les meilleures conditions de croissance pour la plante.
+        </p>
+    </div>
+</div>
+    <div class="w3-third"style="padding:4% ;">
+        <img src="images/Logo_Spacebean.png" style="width: 80%; height:auto;">
+    </div>
+</div>
+
+
+
+        <!-- Promo Section "Statistics" -->
+        <!-- <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+            <div class="w3-quarter">
+                <span class="w3-xxlarge">14+</span>
+                <br>Partners
+            </div>
+            <div class="w3-quarter">
+                <span class="w3-xxlarge">55+</span>
+                <br>Projects Done
+            </div>
+            <div class="w3-quarter">
+                <span class="w3-xxlarge">89+</span>
+                <br>Happy Clients
+            </div>
+            <div class="w3-quarter">
+                <span class="w3-xxlarge">150+</span>
+                <br>Meetings
+            </div>
+        </div> -->
+
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×
+            </span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p lang="en" id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+    <!-- Outreach -->
+    <div class="w3-container bgcolor-dark w3-padding-64" id="Outreach">
+        <div class="w3-row-padding">
+            <div class="w3-col m5" style="padding:0 5% 0 5%">
+                <h3 lang="en">Engagement Académique International</h3>
+                <p lang="en">Chaque année, PolyOrbite envoie des membres pour participer à l’IAC, International Astronautical Congress. En tant qu'étudiants représentants l'équipe, nous présentons des articles scientifiques chaque année. Voici une liste des différents articles présentés au fil des années.
+                </p>
+            </div>
+            <div class="w3-col m6 w3-right" style="padding:0 10% 0 5%">
+                <h5 style="font-size:30px">Guadalajara 2016</h5>
+                <p lang="en">Fabrication d'un propulseur électro spray compact pour désorbiter un nano satellite
+
+                </p>
+
+                <h5 style="font-size:30px">Adelaide 2017</h5>
+                <p lang="en"> Exigences électriques pour le contrôle de CubeSats avec des propulseurs ioniques à électro spray
+                </p>
+                <h5 style="font-size:30px">Bremen 2018</h5>
+                <p lang="en">Automatisation d'expériences biologiques dans l'espace,
+                <br>Système de traitement de données auto-adaptatif pour les petits satellites et son impact sur les futures opérations de satellites
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Group photo" -->
+    <div class="bgimg-4 w3-container w3-light-grey"></div>
+    <!-- ESA-->
+    <div class="w3-container" id="ESA">
+            <div class="w3-half w3-left" style="padding:5% ;">
+                <h3 lang="en" class="w3-left ">Formation ESA</h3>
+                <div class="w3-row-padding">
+                <p lang="en" class="w3-left" style="position:relative">
+                    L’académie ESA organise régulièrement des formations d’une semaine sur des sujets liés à l’ingénierie spatiale. En janvier 2018, PolyOrbite a envoyé deux étudiants en Belgique pour un atelier sur l'ingénierie simultanée pour les projets sur les CubeSat. Ils ont ensuite eu la possibilité de réaliser une étude de faisabilité et un avant-projet en tant qu’exercice s’appliquant directement à un projet de CubeSat. Cet événement a été très formateur pour nos étudiants, qui ont ensuite appliqué leurs connaissances à notre satellite.
+
+                </p>
+            </div>
+        </div>
+            <div class="w3-half"style="padding:3% ;">
+                <img src="images/ESA.jpg" style="width: 100%; height:auto; position:relative">
+            </div>
+        </div>
+    <!--  cont'd -->
+    <div class="w3-container bgcolor-dark" id="whatCubesat">
+        <div class="w3-half w3-left" style="padding:5%">
+            <h3 lang="en" class="w3-left ">Portée éducative</h3>
+            <div class="w3-row-padding">
+            <p lang="en" class="w3-left">
+                L’objectif principal de l’équipe Éducation est de partager les bases d'une connaissance générale sur l'espace à la jeunesse. C’est une opportunité pour les jeunes étudiants de développer un intérêt pour l’espace et des activités stimulantes pour leur créativité. Nous présentons aussi notre société technique et ses différentes missions pour montrer aux étudiants le type de projet qu’ils peuvent entreprendre pendant leurs études.
+                <br>
+                <br>Chaque session, nous transmettons notre passion pour les technologies spatiales en plus d’informations sur les différentes spécialités disponibles à Polytechnique Montréal. Nous sommes fières d’offrir un large choix d’activité qui s’adapte aux différents profils des étudiants.
+                <br>Pour toute question concernant les activités, veuillez contactez l’équipe au education@polyorbite.ca
+            </p>
+        </div>
+    </div>
+        <div class="w3-half" style="padding:5% ;">
+            <img src="images/EducOut.jpg" style="width: 100%; height:auto;">
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:16px 16px" id="contact">
+      <h3 class="w3-center" style="color:black">CONTACT</h3>
+      <div class="w3-xxxlarge w3-section w3-center">
+          <a href="https://www.facebook.com/PolyOrbite/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+          <a href="https://www.instagram.com/polyorbite/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+          <a href="https://twitter.com/PolyOrbite"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+          <a href="https://www.linkedin.com/company/polyorbite/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+      <p class="w3-center w3-large">Suivez-nous sur les réseaux sociaux!</p>
+      <div style="margin-top:0px">
+
+        <!--<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Montreal, QC</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> info@polyorbite.ca</p> -->
+        <br>
+
+        <form method="POST" action="https://formspree.io/web@polyorbite.ca">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+          <p>
+            <button class="w3-button w3-black" type="submit">
+              <i class="fa fa-paper-plane"></i> ENVOYER
+            </button>
+          </p>
+        </form>
+
+        <!-- Image of location/map -->
+        <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
+      </div>
+    </div>
+
+
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <p lang="en">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </footer>
+
+        <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+        </script>
+    </div>
+
+</body>
+</html>
