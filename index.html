@@ -9,99 +9,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-<style>
-
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-h1,h2,h3{color:white; font-size: 50px;}
-
-body, html {
-    height: 100%;
-    line-height: 1.5;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    box-sizing: border-box;
-}
-
-
-.w3-bar .w3-button {
-    padding: 16px;
-    background-color: black;
-    color: white;
-
-}
-
-.banner {
-
-    color: #f2a3a5;
-    padding: 13em 0 13em 0;
-    background-image: url("images/Cover4.png");
-    background-size: 100% ;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    animation-name: example;
-    animation-duration: 2.5s;
-}
-
-/* Standard syntax */
-@keyframes example {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-/* Full height image header */
-.bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("images/group.jpg");
-    min-height: 75%;
-    margin: auto
-}
-.bgimg-2 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("images/Cover4.png");
-    min-height: 100%;
-}
-.bgimg-3 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("images/starry-night-background.png");
-    background-attachment: scroll;
-    width: 100%;
-    height: auto;
-    ;
-}
-.bgimg-4 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("images/XavSimonIAC.jpg");
-    min-height: 75%;
-    margin: auto
-}
-.semiopaque-bg{
-    background: rgb(0,0,0,0.5);
-    padding: 20px;
-    display: inline;
-
-}
-.bgcolor-dark{
-    background-color: #1D252C;
-}
-.bgcolor-darker{
-    background-color: #171D23;
-}
-
-ul {
-    list-style-type: none;
-}
-
-
-
-
-</style>
 <body>
 
     <!-- Navbar (sit on top) -->
@@ -113,8 +22,8 @@ ul {
                 <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
                 <a href="#whatCubesat" class="w3-bar-item w3-button"><i class="fa fa-leaf"></i> MISSIONS</a>
                 <a href="#Outreach" class="w3-bar-item w3-button"><i class="fas fa-atom"></i> OUTREACH</a>
-                <a href="images/Sponsorship.pdf" download class="w3-bar-item w3-button"><i class="fas fa-heartbeat"></i> SPONSORS</a>
-                <a href="FR-index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> FR</a>
+                <a href="#Sponsors" class="w3-bar-item w3-button"><i class="fas fa-heartbeat"></i> SPONSORS</a>
+                <a href="fr.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> FR</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -196,8 +105,8 @@ ul {
         </div>
     </div>
 
-<!-- About cont'd -->
-<div class="w3-container w3-black" id="about2">
+<!-- Spacebean -->
+<div class="w3-container w3-black" id="spacebean">
     <div class="w3-twothird w3-left" style="padding:5% ;">
         <h3 lang="en" class="w3-left ">Payload: Spacebean</h3>
         <div class="w3-row-padding">
@@ -211,8 +120,8 @@ ul {
     </div>
 </div>
 
-<!-- About cont'd -->
-<div class="w3-container bgcolor-dark" id="about2">
+<!-- Sachs -->
+<div class="w3-container bgcolor-dark" id="sachs">
     <div class="w3-twothird w3-left" style="padding:5% ;">
         <h3 lang="en" class="w3-left ">Payload: SACHS</h3>
         <div class="w3-row-padding">
@@ -223,7 +132,7 @@ ul {
     </div>
 </div>
     <div class="w3-third"style="padding:4% ;">
-        <img src="images/Logo_Spacebean.png" style="width: 80%; height:auto;">
+        <img src="images/Logo_Sachs.png" style="width: 80%; height:auto;">
     </div>
 </div>
 
@@ -258,7 +167,7 @@ ul {
                 <p lang="en" id="caption" class="w3-opacity w3-large"></p>
             </div>
         </div>
-        <!-- Group photo" -->
+        <!--IAC photo" -->
         <div class="bgimg-4 w3-container w3-light-grey"></div>
 
     <!-- Outreach -->
@@ -316,76 +225,94 @@ ul {
         </div>
     </div>
 
+<!--Sponsors section-->
+<div class="w3-container w3-light-grey" id="Sponsors">
+<div class="w3-container w3-center">
+    <img src="images/Sponsors-Spread2.png" style="width:100%; padding: 16px 16px">
+</div>
+</div>
 
-    <!-- Contact Section -->
-    <div class="w3-container w3-light-grey" style="padding:16px 16px" id="contact">
-      <h3 class="w3-center" style="color:black">CONTACT</h3>
-      <div class="w3-xxxlarge w3-section w3-center">
-          <a href="https://www.facebook.com/PolyOrbite/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-          <a href="https://www.instagram.com/polyorbite/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-          <a href="https://twitter.com/PolyOrbite"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-          <a href="https://www.linkedin.com/company/polyorbite/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+<!-- Contact Section -->
+<div class="w3-container bgcolor-dark" id="contact">
+  <div class="w3-container w3-center">
+      <div class="row">
+      <div class= "column"><i class="fa fa-map-marker w3-xxxlarge w3-left"style=" padding:15px;"></i>
+          <h4> Adresse</h4><p style="padding-left: 52px">
+          Ecole Polytechnique Montreal, local M-3008
+          <br>2500 chemin de Polytechnique
+          <br>Montreal, QC, H3T 1J4 </p>
       </div>
-      <p class="w3-center w3-large">Follow us on social media!</p>
-      <div style="margin-top:0px">
 
-        <!--<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Montreal, QC</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> info@polyorbite.ca</p> -->
-        <br>
-
-        <form method="POST" action="https://formspree.io/web@polyorbite.ca">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-          <p>
-            <button class="w3-button w3-black" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </p>
-        </form>
-
-        <!-- Image of location/map -->
-        <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
-      </div>
-    </div>
+       <div class= "column"><i class="fa fa-user
+           w3-xxxlarge w3-left"style=" padding:15px;"></i>
+           <h4>Get involved!</h4><p style="padding-left: 52px">Write to us <br> info@polyorbite.ca</p>
+       </div>
+   </div></div>
+  <div class="w3-xxxlarge w3-section w3-center">
+      <a href="https://www.facebook.com/PolyOrbite/"><i class="fa fa-facebook-official w3-hover-opacity" style="padding:10px;"></i></a>
+      <a href="https://www.instagram.com/polyorbite/"><i class="fa fa-instagram w3-hover-opacity"style="padding:10px;"></i></a>
+      <a href="https://twitter.com/PolyOrbite"><i class="fa fa-twitter w3-hover-opacity"style="padding:10px;"></i></a>
+      <a href="https://www.linkedin.com/company/polyorbite/"><i class="fa fa-linkedin w3-hover-opacity" style="padding:10px;"></i></a>
+  </div>
+  <p class="w3-center w3-xlarge">Follow us on social media!</p>
+  <div style="margin-top:0px">
+      <br>
 
 
+    <form method="POST" action="https://formspree.io/web@polyorbite.ca">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+    <!-- Image of location/map -->
+    <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
+  </div>
+</div>
 
 
-        <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64">
-            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-            <p lang="en">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-        </footer>
 
-        <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <p lang="en">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
         }
+    }
 
-
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
-        var mySidebar = document.getElementById("mySidebar");
-
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-            } else {
-                mySidebar.style.display = 'block';
-            }
-        }
-
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-        }
-        </script>
-    </div>
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+    </script>
+</div>
 
 </body>
 </html>
