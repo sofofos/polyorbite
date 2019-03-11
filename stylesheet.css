@@ -1,0 +1,123 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+h1,h2,h3{color:white; font-size: 50px;}
+h4{font-size: 35px; color:white; text-align:left; padding-left: 52px;}
+
+body, html {
+    height: 100%;
+    line-height: 1.5;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+p{
+    text-align: left;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+    background-color: black;
+    color: white;
+
+}
+
+.banner {
+
+    color: #f2a3a5;
+    padding: 13em 0 13em 0;
+    background-image: url("images/Cover4.png");
+    background-size: 100% ;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2.5s;
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/group.jpg");
+    min-height: 75%;
+    margin: auto
+}
+.bgimg-2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/Cover4.png");
+    min-height: 100%;
+}
+.bgimg-3 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/starry-night-background.png");
+    background-attachment: scroll;
+    width: 100%;
+    height: auto;
+    ;
+}
+.bgimg-4 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/XavSimonIAC.jpg");
+    min-height: 75%;
+    margin: auto
+}
+
+.semiopaque-bg{
+    background: rgb(0,0,0,0.5);
+    padding: 20px;
+    display: inline;
+
+}
+.bgcolor-dark{
+    background-color: #1D252C;
+}
+.bgcolor-darker{
+    background-color: #171D23;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+[class*="column"] {
+  float: center;
+  padding: 50px;
+  border: 10px ;
+  display: block;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.colu-1{ width: 50%; height: 100%;}
+.colu-2{ width: 30%; height: 100%;}
+.colu-3{ width: 33.33%;}
+.colu-4{ width: 40%;}
+
+[class*="colu-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
