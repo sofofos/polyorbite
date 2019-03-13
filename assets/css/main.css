@@ -2013,7 +2013,7 @@
 				background-color: #e23135;
 			}
 
-/* Form */
+			/* Form */
 
 	form {
 		margin: 0 0 2em 0;
@@ -3997,4 +3997,21 @@
 				padding: 2em 0 0.1em 0;
 			}
 
+		}
+
+
+		.column {
+		  float: left;
+		  width: 50%;
+		}
+		[class*="column"] {
+		  float: center;
+		  padding: 50px;
+		  border: 10px ;
+		  display: block;
+		}
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
 		}

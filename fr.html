@@ -19,7 +19,7 @@
             <a href="#home"><i class="fa fa-rocket w3-xxlarge" style="padding:10px"></i></a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
-                <a href="#about" class="w3-bar-item w3-button">À PROPOS</a>
+                <a href="#about" class="w3-bar-item w3-button"> À PROPOS</a>
                 <a href="#whatCubesat" class="w3-bar-item w3-button"><i class="fa fa-leaf"></i> MISSIONS</a>
                 <a href="#Outreach" class="w3-bar-item w3-button"><i class="fas fa-atom"></i> IMPLICATION</a>
                 <a href="#Sponsors" class="w3-bar-item w3-button"><i class="fas fa-heartbeat"></i>  COMMANDITAIRES</a>
@@ -71,7 +71,7 @@
     <!--A propos Section -->
     <div class="w3-container" id="about">
         <div class="w3-twothird w3-left" style="padding:5%">
-        <h3 lang="en">A propos</h3>
+        <h3 lang="en">À propos</h3>
 
         <div class="w3-row-padding">
             <p lang="en" class="w3-left" style="font-weight: normal; line-height: 1.5;">
@@ -240,47 +240,49 @@
 
     <!-- Contact Section -->
     <div class="w3-container bgcolor-dark" id="contact">
-      <div class="w3-container w3-center">
-          <div class="w3-row" style="padding-top: 20px;">
-          <div class= "w3-half"><i class="fa fa-map-marker w3-xxxlarge w3-left"style=" padding:20px;"></i>
-              <h4> Adresse</h4>
-              <p style="padding-left: 67px">
-                Ecole Polytechnique Montreal, local M-3008
+
+        <div class="w3-row w3-center" style="padding: 20px">
+
+            <div class= "w3-half">
+                <div class="w3-row"><i class="fa fa-map-marker w3-xxxlarge w3-left"style=" padding:20px;"></i>
+              <h4> Adresse</h4><p style="padding-left: 67px">
+              Ecole Polytechnique Montreal, local M-3008
               <br>2500 chemin de Polytechnique
               <br>Montreal, QC, H3T 1J4 </p>
           </div>
-
-           <div class= "w3-half"><i class="fa fa-user
-               w3-xxxlarge w3-left"style=" padding:15px;"></i>
-               <h4>Impliquez-vous!</h4><p style="padding-left: 74px">Écrivez-nous: <br> info@polyorbite.ca</p>
-           </div>
-       </div></div>
-      <div class="w3-xxxlarge w3-section w3-center">
-          <a href="https://www.facebook.com/PolyOrbite/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-          <a href="https://www.instagram.com/polyorbite/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-          <a href="https://twitter.com/PolyOrbite"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-          <a href="https://www.linkedin.com/company/polyorbite/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          <div class="w3-row">   <!--Social media subsection-->
+            <div class="w3-xxxlarge w3-section w3-left" style="padding:20px">
+                <a href="https://www.facebook.com/PolyOrbite/"><i class="fa fa-facebook-official w3-hover-opacity" style="padding:10px;"></i></a>
+                <a href="https://www.instagram.com/polyorbite/"><i class="fa fa-instagram w3-hover-opacity"style="padding:10px;"></i></a>
+                <a href="https://twitter.com/PolyOrbite"><i class="fa fa-twitter w3-hover-opacity"style="padding:10px;"></i></a>
+                <a href="https://www.linkedin.com/company/polyorbite/"><i class="fa fa-linkedin w3-hover-opacity" style="padding:10px;"></i></a>
+            <p class="w3-center w3-xlarge">Suivez-nous sur les réseaux sociaux!</p>
+          </div> <!--End of social media subsection-->
       </div>
-      <p class="w3-center w3-large">Suivez-nous sur les réseaux sociaux!</p>
-      <div style="margin-top:0px">
+          </div>
 
+           <div class= "w3-half">
+               <i class="fa fa-user
+               w3-xxxlarge w3-left"style=" padding:15px;"></i>
+               <h4>Impliquez-vous!</h4><p style="padding-left: 74px">Écrivez-nous</p>
+               <!--Email form-->
+               <div style="margin-top:0px">
+                 <form method="POST" action="https://formspree.io/web@polyorbite.ca">
+                   <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                   <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                   <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                   <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                   <p>
+                     <button class="w3-button w3-black" type="submit">
+                       <i class="fa fa-paper-plane"></i> ENVOYER
+                     </button>
+                   </p>
+                 </form>
+             </div> <!--End of Email form subsection-->
+           </div>
 
-    <form method="POST" action="https://formspree.io/web@polyorbite.ca">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> ENVOYER
-        </button>
-      </p>
-    </form>
-
-    <!-- Image of location/map -->
-    <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
-  </div>
-</div>
+    </div> <!--End of row-->
+    </div> <!--End of Contact Section-->
 
 
 
