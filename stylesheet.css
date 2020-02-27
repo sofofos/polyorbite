@@ -14,14 +14,22 @@ body, html {
 p{
     text-align: left;
 }
+.p2{
+    text-align: center;
+}
 
 .w3-bar .w3-button {
-    padding: 16px;
+    padding: 10px;
     background-color: black;
     color: white;
 
 }
 
+.w3-top{
+    size: 2vb;
+    font-size: 20vb;
+
+}
 .banner {
 
     color: #f2a3a5;
@@ -41,6 +49,13 @@ p{
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+@media (max-width: 940px) and (min-width:800px) {
+    .w3-bar-item .w3-button .w3-hide-medium {
+        display:none!important;
+    }
+}
+
 /* Full height image header */
 .bgimg-1 {
     background-position: center;
